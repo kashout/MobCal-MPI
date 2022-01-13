@@ -2428,7 +2428,8 @@ C           Entry to input and float integer seeds from previous run
          TWOM24 = 1.
          DO 195 I= 1, 24
          NEXT(I) = I-1
-  195    TWOM24 = TWOM24 * 0.5
+         TWOM24 = TWOM24 * 0.5
+  195    CONTINUE
          NEXT(1) = 24
          TWOM12 = TWOM24 * 4096.
 C      WRITE(8,'(A)') ' FULL INITIALIZATION OF RANLUX WITH 25 INTEGERS:'
